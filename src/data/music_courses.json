@@ -1,0 +1,94 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Guitar Fundamentals",
+      "slug": "guitar-fundamentals",
+      "description": "Learn the basics of playing the guitar with our comprehensive beginner's course.",
+      "price": 99.99,
+      "instructor": "John Doe",
+      "isFeatured": true,
+      "image": "/courses/guitar.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Piano Basics",
+      "slug": "piano-basics",
+      "description": "Master foundational piano skills and start playing your favorite songs.",
+      "price": 89.99,
+      "instructor": "Jane Smith",
+      "isFeatured": false,
+      "image": "/courses/piano.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Photography Essentials",
+      "slug": "photography-essentials",
+      "description": "A complete guide to digital photography for aspiring photographers.",
+      "price": 129.99,
+      "instructor": "Alex Johnson",
+      "isFeatured": true,
+      "image": "/courses/photography.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Web Development Bootcamp",
+      "slug": "web-development-bootcamp",
+      "description": "Become a web developer by learning HTML, CSS, JavaScript, and more.",
+      "price": 199.99,
+      "instructor": "Emily Clark",
+      "isFeatured": false,
+      "image": "/courses/webdev.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Digital Marketing Mastery",
+      "slug": "digital-marketing-mastery",
+      "description": "Unlock the secrets to effective digital marketing with this in-depth course.",
+      "price": 149.99,
+      "instructor": "Michael Lee",
+      "isFeatured": true,
+      "image": "/courses/digitalmarketing.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Creative Writing Workshop",
+      "slug": "creative-writing-workshop",
+      "description": "Explore techniques to inspire and improve your writing skills.",
+      "price": 79.99,
+      "instructor": "Sarah Kim",
+      "isFeatured": false,
+      "image": "/courses/writing.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Music Production Fundamentals",
+      "slug": "music-production-fundamentals",
+      "description": "Learn the basics of music production and create your own tracks.",
+      "price": 119.99,
+      "instructor": "David Kim",
+      "isFeatured": true, 
+      "image": "/courses/musicproduction.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Album Production Fundamentals",
+      "slug": "music-production-fundamentals",
+      "description": "Learn the basics of music production and create your own tracks.",
+      "price": 119.99,
+      "instructor": "David Kim",
+      "isFeatured": true, 
+      "image": "/courses/musicproduction.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Music Society Fundamentals",
+      "slug": "music-production-fundamentals",
+      "description": "Learn the basics of music production and create your own tracks.",
+      "price": 119.99,
+      "instructor": "David Kim",
+      "isFeatured": true, 
+      "image": "/courses/musicproduction.jpg"
+    }
+  ]
+}
