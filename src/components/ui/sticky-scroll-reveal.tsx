@@ -60,13 +60,14 @@ export const StickyScroll = ({
   }, [activeCard]);
 
   return (
+  <>
     <motion.div
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
       className="relative flex h-[30rem] justify-center space-x-80 max-md:space-x-10 overflow-y-auto rounded-md p-10"
       ref={ref}
-    >
+    > 
       <div className="div relative flex items-start px-4">
         <div className="max-w-2xl">
           {content.map((item, index) => (
@@ -108,5 +109,6 @@ export const StickyScroll = ({
         {content[activeCard].content ?? null}
       </div>
     </motion.div>
+    </>
   );
 };

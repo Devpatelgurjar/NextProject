@@ -69,13 +69,17 @@ const content = [
       />
     ),
   },
+  {
+    title: "",
+    description: "",
+  },
 ];
 
 
 
 function WhyChooseUs() {
   return (
-    <div>
+    <div className="h-[70vh] max-md:hidden">
       <StickyScroll content={content}/>
     </div>
   )
