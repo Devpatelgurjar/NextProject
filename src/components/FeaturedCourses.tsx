@@ -4,6 +4,7 @@ import { Button } from "./ui/moving-border";
 import CoursesData from "../data/music_courses.json";
 import { BackgroundGradient } from "./ui/background-gradient";
 import Link from "next/link";
+import Image from 'next/image';
 
 interface Course {
   id: number;
