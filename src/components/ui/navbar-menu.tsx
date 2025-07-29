@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
+import { motion, Transition } from "framer-motion";
 
 
 
-const transition = {
-  type: "spring",
+
+const transition: Transition = {
+  type: "spring", // exact literal type, not generic string
   mass: 0.5,
   damping: 11.5,
   stiffness: 100,
