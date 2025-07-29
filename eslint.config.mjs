@@ -1,3 +1,4 @@
+// eslint.config.mjs
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
@@ -9,18 +10,41 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-// ⬇️ Add your project-wide rule overrides here:
-const eslintConfig = [
+export default [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     rules: {
-      "@typescript-eslint/no-explicit-any": "off",    // Disable error for `any`
-      "react/no-unescaped-entities": "off",           // Disable error for unescaped '
-      "@next/next/no-img-element": "warn",            // Just warn for <img>
-      "react-hooks/exhaustive-deps": "warn",          // Warn for missing deps in useEffect
-      // Add any other relaxing/overriding rules here
+      // Allow usage of any type in TypeScript
+      "@typescript-eslint/no-explicit-any": "off",
+
+      // Allow unescaped apostrophes and similar HTML entities in JSX text
+      "react/no-unescaped-entities": "off",
+
+      // Warn (not error) when <img> tag used; prefer next/image
+      "@next/next/no-img-element": "warn",
+
+      // Warn on missing React hook dependencies instead of error
+      "react-hooks/exhaustive-deps": "warn",
+
+      // Disable var usage errors (or set to "warn" if preferred)
+      "no-var": "warn",
+
+      // Enforce prefer-const where possible (typical to keep)
+      "prefer-const": "warn",
+
+      // Warn on unused variables (change to error if needed)
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          vars: "all",
+          args: "after-used",
+          ignoreRestSiblings: true,
+          varsIgnorePattern: "^_", // ignore variables starting with _
+          argsIgnorePattern: "^_",
+        },
+      ],
+
+      // You can add more rules/conventions here as needed
     },
   },
 ];
-
-export default eslintConfig;
